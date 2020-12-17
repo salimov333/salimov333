@@ -11,7 +11,7 @@
  - 🌱 I’m currently learning **JavaScript**
  - 👯 I’m looking to collaborate on **open source** as well any other **projects** written HTML/CSS/JavaScript.
  - 🤔 I’m looking for help with ***Functions Used as Variable Values in JavaScript***
- - 💬 Ask me about **Computer/Networks suppor and Cisco Systems**
+ - 💬 Ask me about **Computer/ Networks suppor and Cisco Systems**
  - 📫 How to reach me: 
     - [My GitHube](https://github.com/salimov333/). 
     - <salimov333@gmail.com>
