@@ -7,16 +7,17 @@
  ![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=salimov333&count_private=true&show_icons=true&theme=dark) 
 
 
- - 🔭 I’m currently working on **HTML/CSS**
- - 🌱 I’m currently learning **JavaScript**
- - 👯 I’m looking to collaborate on **open source** as well any other **projects** written HTML/CSS/JavaScript.
- - 🤔 I’m looking for help with ***Functions Used as Variable Values in JavaScript***
- - 💬 Ask me about **Computer/ Networks suppor and Cisco Systems**
+ - 🔭 I’m currently working on **HTML/CSS/JavaScript/MongoDB**
+ - 🌱 I’m currently learning **React.js**
+ - 👯 I’m looking to collaborate on **open source** as well any other **projects** written HTML/CSS/JavaScript/React.js.
+ - 🤔 I’m looking for help with ***Context in React***
+ - 💬 Ask me about **How to create a REST API project?**
  - 📫 How to reach me: 
-    - [My GitHube](https://github.com/salimov333/). 
-    - <salimov333@gmail.com>
+    - [GitHube](https://github.com/salimov333/) 
+    - [LinkedIn](https://www.linkedin.com/in/salem-helwani/)
+    - Email: salimov333@gmail.com
  - 😄 Pronouns: He/Him
  <br>
 
-<code><img width = "400" height="auto" src="https://catchyagency.com/wp-content/uploads/2016/04/A-Day-in-the-Life-of-a-Developer-1.png"></code>
+<code><img width = "400" height="auto" src="https://www.thebalancecareers.com/thmb/4WhFttV-u-0LZtb8LwXlfcI30RE=/1333x1000/smart/filters:no_upscale()/web-developer-job-description-salary-and-skills-2061841_final-01-1daf6d8219bd49a089189b4e8c6a7e4d.png"></code>
 
