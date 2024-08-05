@@ -14,6 +14,6 @@
  - 📫 How to reach me: 
     - [GitHub](https://github.com/salimov333/) 
     - [LinkedIn](https://www.linkedin.com/in/salem-helwani/)
-    - [Email](salemhelwani@web.de)
+    - [Email](mailto:salemhelwani@web.de)
  - 😄 Pronouns: He/Him
  <br>
