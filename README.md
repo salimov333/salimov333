@@ -7,14 +7,13 @@
  ![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=salimov333&count_private=true&show_icons=true&theme=dark) 
 
 
- - 🔭 I’m currently working on **HTML|CSS|JavaScript|Node.js|React.js|MongoDB**
- - 🌱 I’m currently learning **SASS/SCSS|Bootstrap**
+ - 🔭 I’m currently working on **HTML|CSS|JavaScript|React.js|Node.js|Express.js|MongoDB**
+ - 🌱 I’m currently learning **Next.js|TypeScript**
  - 👯 I’m looking to collaborate on **open source** as well any other **Full-stack projects**.
- - 🤔 I’m looking for help with ***Front-End frameworks***
  - 💬 Ask me about **How to create a REST API?**
  - 📫 How to reach me: 
-    - [GitHube](https://github.com/salimov333/) 
+    - [GitHub](https://github.com/salimov333/) 
     - [LinkedIn](https://www.linkedin.com/in/salem-helwani/)
-    - [Email](salimov333@gmail.com)
+    - [Email](salemhelwani@web.de)
  - 😄 Pronouns: He/Him
  <br>
