@@ -94,10 +94,10 @@ I am passionate about Full-Stack Development and continuously learning new techn
 I'm actively working on Full-Stack applications, contributing to open-source, and building robust, scalable solutions.  
 Feel free to check out my repositories and give your feedback!
 
-### 🚀 Featured Projects:
+<!-- ### 🚀 Featured Projects:
 
 - [Project 1](#) – Short description of your project.
-- [Project 2](#) – Another description of what you’ve built.
+- [Project 2](#) – Another description of what you’ve built.-->
 
 ## 💬 Let's Connect
 
