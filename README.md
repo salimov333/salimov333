@@ -5,7 +5,6 @@
 
 ![GitHub Followers](https://img.shields.io/github/followers/salimov333?label=Followers&style=social)
 ![GitHub Stars](https://img.shields.io/github/stars/salimov333?label=Stars&style=social)
-![GitHub Followers](https://img.shields.io/github/followers/salimov333?label=Followers&style=social)
 
 **I love coding and contributing to open-source projects.**  
 I am passionate about Full-Stack Development and continuously learning new technologies to expand my expertise.
