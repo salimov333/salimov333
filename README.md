@@ -55,8 +55,8 @@ Passionate about Full-Stack Development and continuously learning new technologi
 
 ## 🚀 Featured Projects
 
-- [SpeakEasy](https://github.com/salimov333/speakEasy) – Simple web application that converts spoken words into text in real-time.
-- [AI Temperature Predictor](https://github.com/salimov333/ai-temperature-predictor) – AI application that uses a neural network and machine learning principles to predict weather temperature.
+- [SpeakEasy](https://salimov333.github.io/speakEasy/) – Simple web application that converts spoken words into text in real-time.
+- [AI Temperature Predictor](https://salimov333.github.io/ai-temperature-predictor/) – AI application that uses a neural network and machine learning principles to predict weather temperature.
 
 ---
 
