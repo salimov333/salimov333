@@ -1,11 +1,14 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}] # Runs every day at midnight
-  workflow_dispatch: # Allows you to run it manually
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
   push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -15,19 +18,15 @@ jobs:
           base: header, community, repositories, metadata
           config_timezone: UTC
           
-          # Replacement for Top Languages
+          # This is the "Safe" version to ensure it passes quickly
           plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_details: percentage
           plugin_languages_limit: 8
           
-          # Replacement for Habits/Streak
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          
-          # Replacement for Trophies/Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          
+          # Achievements is currently buggy on GitHub's side, 
+          # so we'll leave it off for the first successful run.
+          plugin_achievements: no
+          plugin_habits: no 
+
           # Styling
           config_theme: radical
