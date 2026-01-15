@@ -8,8 +8,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      projects: read # Explicitly allow reading projects
+      contents: write # This is the only one strictly needed for the GITHUB_TOKEN to save the file
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -19,7 +18,7 @@ jobs:
           base: header, community, repositories, metadata
           config_timezone: UTC
           config_theme: radical
-          plugins_errors_fatal: no # Prevents one error from breaking the whole run
+          plugins_errors_fatal: no
 
           # 1. Languages (Optimized for Android/Java)
           plugin_languages: yes
@@ -35,14 +34,13 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 5
 
-          # 3. Project List (Updated for Projects v2)
+          # 3. Project List (Supports modern V2 projects)
           plugin_projects: yes
+          plugin_projects_v2: yes
           plugin_projects_limit: 4
           plugin_projects_descriptions: yes
-          plugin_projects_v2: yes # REQUIRED for modern GitHub projects
 
-          # 4. Achievements (Safe Mode)
+          # 4. Achievements
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes # Helps access some missing badges
