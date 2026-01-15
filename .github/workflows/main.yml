@@ -19,14 +19,14 @@ jobs:
           config_timezone: UTC
           config_theme: radical
 
-          # 1. Languages (In-depth analysis for Java/Kotlin)
+          # Languages Configuration
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
-          plugin_languages_details: percentage
+          plugin_languages_details: percentage, bytes-size # Added bytes to see if it's finding anything
           plugin_languages_limit: 8
-          plugin_languages_ignored: html, css, tex, xml, json
+          # Removed 'xml' from ignore to see if that's the bottleneck
+          plugin_languages_ignored: html, css, tex, json
 
-          # 2. Standard 3-Year History Calendar (Non-3D)
-          plugin_calendar: yes
-          plugin_calendar_limit: 0
+          # Fix for "No activity found"
+          commits_authoring: salimov333, salimov333@users.noreply.github.com
