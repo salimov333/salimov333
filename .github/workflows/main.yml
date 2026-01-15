@@ -1,0 +1,33 @@
+name: Metrics
+on:
+  schedule: [{cron: "0 0 * * *"}] # Runs every day at midnight
+  workflow_dispatch: # Allows you to run it manually
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: salimov333
+          template: classic
+          base: header, community, repositories, metadata
+          config_timezone: UTC
+          
+          # Replacement for Top Languages
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          
+          # Replacement for Habits/Streak
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          
+          # Replacement for Trophies/Achievements
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          
+          # Styling
+          config_theme: radical
