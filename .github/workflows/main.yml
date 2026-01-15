@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      projects: read # Explicitly allow reading projects
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -18,30 +19,30 @@ jobs:
           base: header, community, repositories, metadata
           config_timezone: UTC
           config_theme: radical
+          plugins_errors_fatal: no # Prevents one error from breaking the whole run
 
-          # 1. Languages (In-depth analysis)
+          # 1. Languages (Optimized for Android/Java)
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
-          plugin_languages_ignored: html, css, tex, xml
+          plugin_languages_ignored: html, css, tex, xml, json
 
-          # 2. Commit Graph (3D Isometric Calendar)
-          # Recent 3D Visual (Last 6 months)
+          # 2. Calendars
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year 
-          
-          # Long-term History (Last 5 years)
+          plugin_isocalendar_duration: half-year
           plugin_calendar: yes
           plugin_calendar_limit: 5
 
-          # 3. Project List
+          # 3. Project List (Updated for Projects v2)
           plugin_projects: yes
-          plugin_projects_limit: 4 # Shows your 4 most recent projects
+          plugin_projects_limit: 4
           plugin_projects_descriptions: yes
+          plugin_projects_v2: yes # REQUIRED for modern GitHub projects
 
-          # 4. Optional: Achievements (Re-enabling now that we have write perms)
+          # 4. Achievements (Safe Mode)
           plugin_achievements: yes
           plugin_achievements_display: compact
-          plugin_achievements_threshold: C # Only show major achievements
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes # Helps access some missing badges
