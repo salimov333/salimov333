@@ -1,32 +1,69 @@
+# The name of the workflow as it appears in the GitHub Actions tab
 name: Metrics
+
+# Defines when this script should run automatically
 on:
+  # Runs once a day at midnight (UTC)
   schedule: [{ cron: "0 0 * * *" }]
+  # Allows you to manually trigger the run by clicking a button in GitHub
   workflow_dispatch:
+  # Runs whenever you push a change to the 'master' or 'main' branches
   push: { branches: ["master", "main"] }
 
 jobs:
   github-metrics:
+    # Uses the latest Ubuntu Linux virtual machine to run the script
     runs-on: ubuntu-latest
+
+    # Grants the script permission to save the generated image file back to your repo
     permissions:
       contents: write
+
     steps:
+      # Uses the official lowlighter/metrics action
       - uses: lowlighter/metrics@latest
         with:
+          # Uses the secret token you created (stored in repo settings)
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # Your GitHub username
           user: salimov333
+
+          # The layout style (classic is a clean, organized card)
           template: classic
+
+          # Defines what basic sections to show.
+          # Note: 'activity' is removed to hide the contribution calendar.
           base: header, community, repositories, metadata
+
+          # Your local time zone (affects data calculation)
           config_timezone: UTC
+
+          # Sets the dark purple/pink neon color theme
           config_theme: radical
 
-          # Languages Configuration
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage, bytes-size # Added bytes to see if it's finding anything
-          plugin_languages_limit: 8
-          # Removed 'xml' from ignore to see if that's the bottleneck
-          plugin_languages_ignored: html, css, tex, json
+          # --- Language Plugin Settings ---
 
-          # Fix for "No activity found"
+          # Enables the most-used languages section
+          plugin_languages: yes
+
+          # Forces the tool to scan every commit (more accurate for Java/Kotlin)
+          plugin_languages_indepth: yes
+
+          # Defines the visual style of the language list
+          plugin_languages_sections: most-used
+
+          # Shows the exact percentage of each language used
+          plugin_languages_details: percentage
+
+          # Only shows the top 8 languages to keep the card short
+          plugin_languages_limit: 8
+
+          # Hides non-programming languages to keep the focus on software engineering
+          plugin_languages_ignored: html, css, tex, xml, json
+
+          # --- Authoring Settings ---
+
+          # Tells the tool which names/emails represent YOU.
+          # If your local Git email isn't here, the tool won't find your work.
           commits_authoring: salimov333, salimov333@users.noreply.github.com
