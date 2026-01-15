@@ -25,8 +25,8 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
-          plugin_languages_ignored: html, css, tex, xml, json
+          # plugin_languages_ignored: html, css, tex, xml, json
 
           # 2. Standard 5-Year History Calendar (Non-3D)
-          plugin_calendar: yes
-          plugin_calendar_limit: 5
+          # plugin_calendar: yes
+          # plugin_calendar_limit: 3
