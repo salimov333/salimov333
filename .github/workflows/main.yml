@@ -28,5 +28,5 @@ jobs:
           plugin_languages_ignored: html, css, tex, xml, json
 
           # 2. Standard 3-Year History Calendar (Non-3D)
-          # plugin_calendar: yes
-          # plugin_calendar_limit: 3
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
