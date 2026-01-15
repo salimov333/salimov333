@@ -8,7 +8,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # This is the only one strictly needed for the GITHUB_TOKEN to save the file
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -18,9 +18,8 @@ jobs:
           base: header, community, repositories, metadata
           config_timezone: UTC
           config_theme: radical
-          plugins_errors_fatal: no
 
-          # 1. Languages (Optimized for Android/Java)
+          # 1. Languages (In-depth analysis for Java/Kotlin)
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
@@ -28,19 +27,6 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_ignored: html, css, tex, xml, json
 
-          # 2. Calendars
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          # 2. Standard 5-Year History Calendar (Non-3D)
           plugin_calendar: yes
           plugin_calendar_limit: 5
-
-          # 3. Project List (Supports modern V2 projects)
-          plugin_projects: yes
-          plugin_projects_v2: yes
-          plugin_projects_limit: 4
-          plugin_projects_descriptions: yes
-
-          # 4. Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
