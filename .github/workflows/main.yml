@@ -28,7 +28,6 @@ jobs:
           plugin_languages_ignored: html, css, tex, xml
 
           # 2. Commit Graph (3D Isometric Calendar)
-          plugin_isocalendar: yes
           # Recent 3D Visual (Last 6 months)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year 
