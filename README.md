@@ -8,10 +8,11 @@
 **I love coding and contributing to open-source projects.**  
 Passionate about Full-Stack Development and continuously learning new technologies to expand my expertise.
 
-![Salem's GitHub Stats](https://github-readme-stats.vercel.app/api?username=salimov333&count_private=true&show_icons=true&theme=radical)
+<!-- ![Salem's GitHub Stats](https://github-readme-stats.vercel.app/api?username=salimov333&count_private=true&show_icons=true&theme=radical)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=salimov333&theme=radical&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=salimov333&layout=compact&theme=radical)
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=salimov333&theme=radical&no-frame=true&row=2&column=4)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=salimov333&theme=radical&no-frame=true&row=2&column=4)-->
+![Metrics](/github-metrics.svg)
 
 ---
 
