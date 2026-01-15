@@ -22,6 +22,9 @@ jobs:
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
+       
+          plugin_languages_ignored: html, css, tex # Optional: ignore common filler languages
+          plugin_languages_indepth: yes    # This performs a deeper analysis
           
           # Achievements is currently buggy on GitHub's side, 
           # so we'll leave it off for the first successful run.
