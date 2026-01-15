@@ -31,4 +31,5 @@ jobs:
           plugin_habits: no 
 
           # Styling
-          config_theme: radical
+          env:
+          CONFIG_THEME: radical
